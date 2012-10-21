@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[xiaolai]]></title>
+  <link href="http://xiaolai.github.com/atom.xml" rel="self"/>
+  <link href="http://xiaolai.github.com/"/>
+  <updated>2012-10-21T23:25:35+08:00</updated>
+  <id>http://xiaolai.github.com/</id>
+  <author>
+    <name><![CDATA[xiaolai]]></name>
+    <email><![CDATA[lixiaolai@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[重写《人人都能用英语》]]></title>
+    <link href="http://xiaolai.github.com/blog/2012/10/20/Rewrite-Everyone-Can-Use-English/"/>
+    <updated>2012-10-20T13:25:00+08:00</updated>
+    <id>http://xiaolai.github.com/blog/2012/10/20/Rewrite-Everyone-Can-Use-English</id>
+    <content type="html"><![CDATA[<p>两年前，着手写《人人都能用英语》，成稿一段时间后，由于种种原因，并没有正式出版。随后只因事物繁忙，搁置至今。最近在<a href="http://lixiaolai.com/blog/2012/10/15/ruby-on-rails-is-my-new-start/">学Ruby on Rails</a>、以及写《<a href="http://lixiaolai.com/alpha/on-learning/">学习学习再学习</a>》的过程中，又重新审视了之前的文稿，有点庆幸当初并未出版。我将花几周时间做准备，然后重新开始写——不过，确定的是，坚决不再使用传统出版渠道——只发表在互联网上，甚至应该做成一个互联网应用才好。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[新的起点Ruby on Rails]]></title>
+    <link href="http://xiaolai.github.com/blog/2012/10/15/ruby-on-rails-is-my-new-start/"/>
+    <updated>2012-10-15T10:20:00+08:00</updated>
+    <id>http://xiaolai.github.com/blog/2012/10/15/ruby-on-rails-is-my-new-start</id>
+    <content type="html"><![CDATA[<p>一直在说，“偷懒的唯一方法是不偷懒”。结果，一晃好几年过去，在一个重要的领域，自己犯了这个错误。</p>
+
+<p>2007年的时候，知道了ROR的存在，研究了一小下，没学会。然后就想，我毕竟不需要自己写代码的吧？于是，四处找人帮忙，也找过各种外包……最终，自己想要做的网站一直就没有做出来。这中间“偷懒地”用了很多工具，WordPress, Drupal…等等，都差强人意。</p>
+
+<p>一晃接近5年过去，时间也虚度了（在这方面），钱也花了很多——真的不少，随便找个外包就是几万块但也不见得做出自己想要的东西（主要问题并不在外包，而在于自己的需求和想法在不断地变化）……到了八月份，痛定思痛，决定自己动手。</p>
+
+<p>真的开始玩命学了，就会知道，难依旧很难，但其实也没有多难——起码不会“不可逾越”。两个月过去，期间各种杂事忙碌，主要是国庆长假期间有大把的时间折腾。慢慢开朗了一些，找到一些感觉。祝我顺利！</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[转了一圈，回到TextMate]]></title>
+    <link href="http://xiaolai.github.com/blog/2012/10/06/return-to-textmate/"/>
+    <updated>2012-10-06T13:02:00+08:00</updated>
+    <id>http://xiaolai.github.com/blog/2012/10/06/return-to-textmate</id>
+    <content type="html"><![CDATA[<p>两周前，听人介绍，开始尝试使用<a href="http://www.sublimetext.com">Sublime Text 2</a>，正经折腾了一阵子，最终，还是决定回到<a href="https://github.com/textmate/textmate/downloads">TextMate 2</a>。</p>
+
+<p>其实，之前的TM1.5，我还是花钱买的，只不过，由于自己悟性太差，很多功能搞不明白，所以才四处找“更好的编辑器”。用了一段时间ST之后，才发现实际上TM的功能更强大（或者，可能只是对我来说），而ST基本上只有一个功能TM没有：分屏（split pane）——对我这种用多个显示器的人来说，这个功能其实很鸡肋。</p>
+
+<p>最要命的是，ST居然一直没有一个集中的菜单提供快捷键（例如各种Tab Trigger）提示，这让我这种菜鸟头痛无比。甚至专门写了个脚本去搜索Package目录，生成一个可查阅的html文件。然而，在这折腾的过程中，发现ST的很多“强大”实际上是建立在它可以导入TM Bundle的基础上的——那我为什么不直接用TM呢？</p>
+
+<p>ST还是很漂亮的，我也花钱买了Liscence，有点不舍。但，毕竟时间精力是自己的，而且需要持续投入，于是，经过若干天的折腾，还是决定放弃ST，集中使用TM。</p>
+
+<p>好的一面是，在折腾ST的过程中，加深了对TM的了解——实际上是加深了对这一类编辑器的了解——各方面都还是大有斩获的。</p>
+
+<p>以后我遇到任何与TextMate相关的小技巧，都会放在这个地址：<a href="http://lixiaolai.com/alpha/notes/TextMate2.html">http://lixiaolai.com/alpha/notes/TextMate2.html</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[超纲知识点]]></title>
+    <link href="http://xiaolai.github.com/blog/2012/10/02/chao-gang-zhi-shi-dian/"/>
+    <updated>2012-10-02T02:07:00+08:00</updated>
+    <id>http://xiaolai.github.com/blog/2012/10/02/chao-gang-zhi-shi-dian</id>
+    <content type="html"><![CDATA[<p>今天遇到一个好词：“超纲知识点”，来自<a href="https://twitter.com/ghosTM55">@ghosTM55</a>的<a href="http://blog.gitcafe.com/99.html">博客</a>：</p>
+
+<blockquote>
+  <p>前阵子有很多流氓在全国各地积极的展现自己的爱国情怀的时候有人在网上说俄罗斯对中国也做了不少坏事他们为什么不反俄罗斯，我看到了一句神回复叫<strong>因为知识点超纲了</strong>，我当时就笑尿了。</p>
+</blockquote>
+
+<p>这还真是中国教育的最大劣根。从小学开始，老师就喜欢“划重点”——人都这样，喜欢自己被重视的感觉，喜欢自己说话掷地有声、铿锵有力、最好说一不二——管它是真的还是假的。而老师这么做的结果就是，绝大多数学生习惯了只学“重要”的——不管那“重要”是否真的重要。</p>
+
+<p>于是，在逐渐长大的过程中，每个人的生活都有无数个圈圈，基本上都是别人划的，没有圈圈的时候，还要特地找人去划，没个圈圈还真的不放心……最终，这成了很多人的生活态度：生活里，这个不是我该做的，工作上那个不是我的职责，学习中这些和那些都不是考试重点，或者“找工作用不上”……唉，这段话的标题应该是“傻屄是如何炼成的”——对，还真的要“炼”。</p>
+
+<p>这还真的是天分问题：就是有些人不喜欢圈圈，从一开始就不喜欢，无论别人怎么划。喜欢的永远喜欢，不可教育；不喜欢的则永远不喜欢，非要折腾一辈子，自得其乐。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[把博客搬到github上的好处]]></title>
+    <link href="http://xiaolai.github.com/blog/2012/09/25/ba-bo-ke-ban-dao-githubshang-de-hao-chu/"/>
+    <updated>2012-09-25T15:44:00+08:00</updated>
+    <id>http://xiaolai.github.com/blog/2012/09/25/ba-bo-ke-ban-dao-githubshang-de-hao-chu</id>
+    <content type="html"><![CDATA[<p>Git这个工具实际上并不仅仅是给程序员用的。版本控制谁都需要，对码字的人尤为如此。使用Git工具相当于在自己的硬盘上创建了一个备份，而后又在“云端”（github.com）上创建了一个备份，更重要的是，随时可以回滚（rollback）到过往的某个状态……</p>
+
+<p>对我来说还有另外一个好处，就是再也不用关心服务器压力了。过去一段时间里，天天收到Linode的邮件……现在终于可以忽略这些邮件了。哼哼。</p>
+
+<p>最后一个好处是“装蛋”。这样写博客更像码农。哈。而老博客的内容，挪到<a href="http://wordpress.lixiaolai.com">http://wordpress.lixiaolai.com</a>上了，文件都在，链接尽量都改过。现在已经能够正常访问。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Quix: a bookmarklet of great use]]></title>
+    <link href="http://xiaolai.github.com/blog/2012/09/24/quix-a-bookmarklet-of-great-use/"/>
+    <updated>2012-09-24T14:21:00+08:00</updated>
+    <id>http://xiaolai.github.com/blog/2012/09/24/quix-a-bookmarklet-of-great-use</id>
+    <content type="html"><![CDATA[<p><a href="http://www.quixapp.com/help/">Quix</a> is a bookmarklet which opens a prompt, and then responds to commands. </p>
+
+<iframe src="http://player.vimeo.com/video/8540763?byline=0&amp;portrait=0&amp;color=c9ff23" width="" height="" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Learned a new argument for cd command]]></title>
+    <link href="http://xiaolai.github.com/blog/2012/09/20/learned-a-new-argument-for-cd-command/"/>
+    <updated>2012-09-20T00:46:00+08:00</updated>
+    <id>http://xiaolai.github.com/blog/2012/09/20/learned-a-new-argument-for-cd-command</id>
+    <content type="html"><![CDATA[<p>It’s a nice post for “newbies”: <a href="http://wiseheartdesign.com/articles/2010/11/12/the-designers-guide-to-the-osx-command-prompt">The Designer’s Guide to the OSX Command Prompt - A Tutorial for the Modern Web Designer</a>.</p>
+
+<p>I googled around a little, learned that <strong>pwd</strong> stands for “<strong>P</strong>resent <strong>W</strong>orking <strong>D</strong>irectory”…</p>
+
+<p>But when I found out a “new” (new only for me) argument <code>cd -</code>, I hated myself for having missed such a useful functinality for years simply because I didn’t read the help!</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Got an auto-generated-toc for pages...]]></title>
+    <link href="http://xiaolai.github.com/blog/2012/09/17/got-an-auto-generated-toc-for-pages-dot-dot-dot/"/>
+    <updated>2012-09-17T15:05:00+08:00</updated>
+    <id>http://xiaolai.github.com/blog/2012/09/17/got-an-auto-generated-toc-for-pages-dot-dot-dot</id>
+    <content type="html"><![CDATA[<p>Following the instruction of <a href="https://twitter.com/#!/brianclapper">Brain Clapper</a>’s post, “<a href="http://brizzled.clapper.org/blog/2012/02/04/generating-a-table-of-contents-in-octopress/">Generating a Table of Contents in Octopress</a>”, I added an auto TOC for pages (rather than merely for post), see the result here: “<a href="http://xiaolai.github.com/notes/Rails.html">Notes on Rails</a>”.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hello]]></title>
+    <link href="http://xiaolai.github.com/blog/2012/09/16/hello/"/>
+    <updated>2012-09-16T14:05:00+08:00</updated>
+    <id>http://xiaolai.github.com/blog/2012/09/16/hello</id>
+    <content type="html"><![CDATA[<p>Set up a blog based on <a href="https://github.com/mojombo/jekyll">jeklly</a> and <a href="http://octopress.org">octopress</a> on <a href="http://github.com">http://github.com</a>, and installed <a href="https://github.com/amelandri/darkstripes">DarkStripes theme</a>.</p>
+
+<p>Learned a little bit markdown syntax. … and left “<a href="https://github.com/Shopify/liquid/wiki/Liquid-for-Designers">liquid</a>” in the todo list.</p>
+
+<p>Hello, world!</p>
+]]></content>
+  </entry>
+  
+</feed>
