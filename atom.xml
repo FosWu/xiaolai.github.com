@@ -4,7 +4,7 @@
   <title><![CDATA[xiaolai]]></title>
   <link href="http://xiaolai.github.com/atom.xml" rel="self"/>
   <link href="http://xiaolai.github.com/"/>
-  <updated>2012-10-26T17:14:30+08:00</updated>
+  <updated>2012-10-27T10:57:36+08:00</updated>
   <id>http://xiaolai.github.com/</id>
   <author>
     <name><![CDATA[xiaolai]]></name>
@@ -22,7 +22,7 @@
 
 <p>这款输入法的名字是<a href="http://code.google.com/p/rimeime/wiki/Downloads">Rime</a>，Linux版叫“中州韵”(ibus-rime)，Windows版叫“小狼毫”(Weasel)，Mac OS版叫“鼠须管”(Squirrel)。</p>
 
-<p>下载安装很容易，配置，由于没有图形化界面(GUI)，所以稍微麻烦一点点。(事实上，只是因为我的需求稍微特殊一点，如果过去一直是使用全拼、简拼的话，其实完全没必要进行什么设置，下载安装之后就可以直接用了……)</p>
+<p>下载安装很容易，配置，由于没有图形化界面(GUI)，所以稍微麻烦一点点。(事实上，只是因为我的需求稍微特殊一点，如果过去一直是使用全拼、简拼的话，其实完全没必要进行什么设置，下载安装之后就可以直接用了……另，如果你用全拼，但需要打开模糊音设置，那就创建<a href="https://gist.github.com/2320943">这个文件</a>；如果你需要其它输入方案，那就创建<a href="https://gist.github.com/2309739">这个文件</a>)</p>
 
 <p>我的需求如下：</p>
 
