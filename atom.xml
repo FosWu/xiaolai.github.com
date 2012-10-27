@@ -4,7 +4,7 @@
   <title><![CDATA[xiaolai]]></title>
   <link href="http://xiaolai.github.com/atom.xml" rel="self"/>
   <link href="http://xiaolai.github.com/"/>
-  <updated>2012-10-27T10:57:36+08:00</updated>
+  <updated>2012-10-27T11:04:40+08:00</updated>
   <id>http://xiaolai.github.com/</id>
   <author>
     <name><![CDATA[xiaolai]]></name>
@@ -96,6 +96,26 @@
 <h1 id="section-4">导入各种词库</h1>
 
 <p>我自己没空折腾这个，基本上自带的词库对我来说已经够用了。不过，这里有一篇很详细的文章，应该够用了：<a href="http://www.ukuang.com/2012/10/13/鼠须管输入法导入搜狗细胞词库/">鼠须管输入法导入搜狗细胞词库</a>.</p>
+
+<h1 id="section-5">补充</h1>
+
+<p>用了几天之后才发现鼠须管居然带着一个国际音标输入方案，这对我来说实在太有用了！打开之前用过的default.custom.yaml文件，添加这个方案：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>default.custom.yaml </span><a href="https://github.com/xiaolai/rime-settings/blob/master/default.custom.yaml">code </a></figcaption> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="python"><span class="line"><span class="n">patch</span><span class="p">:</span>
+</span><span class="line">  <span class="s">&quot;menu/page_size&quot;</span><span class="p">:</span> <span class="mi">5</span>
+</span><span class="line">  <span class="n">schema_list</span><span class="p">:</span>
+</span><span class="line">    <span class="o">-</span> <span class="n">schema</span><span class="p">:</span> <span class="n">double_pinyin_mspy</span>
+</span><span class="line">    <span class="o">-</span> <span class="n">schema</span><span class="p">:</span> <span class="n">ipa_xsampa</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>而后deploy（部署），<code>control +</code>`就可以更换到这个输入方案。</p>
+
+<p>另外，我自己前几天写了个TextMate Bundle，用来输入国际音标的HTML Entities，托管在github: <a href="https://github.com/xiaolai/ipa-html-entities-tmbundle">ipa-html-entities-tmbundle</a>，也许对一些人有用。</p>
 ]]></content>
   </entry>
   
