@@ -4,7 +4,7 @@
   <title><![CDATA[xiaolai]]></title>
   <link href="http://xiaolai.github.com/atom.xml" rel="self"/>
   <link href="http://xiaolai.github.com/"/>
-  <updated>2012-10-28T23:31:38+08:00</updated>
+  <updated>2012-10-28T23:36:18+08:00</updated>
   <id>http://xiaolai.github.com/</id>
   <author>
     <name><![CDATA[xiaolai]]></name>
@@ -20,7 +20,7 @@
     <id>http://xiaolai.github.com/blog/2012/10/28/english-phonetics-keyboard-layout-for-mac-os-x</id>
     <content type="html"><![CDATA[<p>前几天写了个TextMate Bundle，用来输入国际音标的HTML Entities，托管在github: <a href="https://github.com/xiaolai/ipa-html-entities-tmbundle">ipa-html-entities-tmbundle</a>。后来发现鼠须管有一个IPA Schema，不过，用过之后，发现对于只需要输入英语音标的需求来说，并不是很方便。</p>
 
-<p>今天花了十几分钟，用Ukelele编写了一个<a href="http://www.lixiaolai.com/files/English-Phonetics.keylayout">English Phonetics Keyboard Layout</a>(点击鼠标右键选择‘另存为…’)。下载之后，放进 <code>/Library/Keyboard Layouts/</code> 目录，而后就可以像添加输入法一样调用了：</p>
+<p>今天花了十几分钟，用<a href="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=ukelele">Ukelele</a>编写了一个<a href="http://www.lixiaolai.com/files/English-Phonetics.keylayout">English Phonetics Keyboard Layout</a>(点击鼠标右键选择‘另存为…’)。下载之后，放进 <code>/Library/Keyboard Layouts/</code> 目录，而后就可以像添加输入法一样调用了：</p>
 
 <p><img class="center" src="http://www.lixiaolai.com/images/input-sources.png" /></p>
 
