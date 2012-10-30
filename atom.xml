@@ -4,7 +4,7 @@
   <title><![CDATA[xiaolai]]></title>
   <link href="http://xiaolai.github.com/atom.xml" rel="self"/>
   <link href="http://xiaolai.github.com/"/>
-  <updated>2012-10-28T23:36:18+08:00</updated>
+  <updated>2012-10-31T07:42:31+08:00</updated>
   <id>http://xiaolai.github.com/</id>
   <author>
     <name><![CDATA[xiaolai]]></name>
@@ -12,6 +12,43 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Setting up mysql through homebrew on mac]]></title>
+    <link href="http://xiaolai.github.com/blog/2012/10/31/setting-up-mysql-through-homebrew-on-mac/"/>
+    <updated>2012-10-31T07:39:00+08:00</updated>
+    <id>http://xiaolai.github.com/blog/2012/10/31/setting-up-mysql-through-homebrew-on-mac</id>
+    <content type="html"><![CDATA[<p>安装、配置与基本使用</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>terminal  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="c">#安装</span>
+</span><span class="line">brew install mysql
+</span><span class="line"><span class="c">#配置</span>
+</span><span class="line">mkdir ~/Library/LaunchAgents/
+</span><span class="line">cp /usr/local/Cellar/mysql/5.5.27/homebrew.mxcl.mysql.plist ~/Library/LaunchAgents/aunchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+</span><span class="line"><span class="nb">unset </span>TMPDIR
+</span><span class="line">mysql_install_db --verbose --user<span class="o">=</span><span class="sb">`</span>whoami<span class="sb">`</span> --basedir<span class="o">=</span><span class="s2">&quot;$(brew --prefix mysql)&quot;</span> --datadir<span class="o">=</span>/usr/local/var/mysql --tmpdir<span class="o">=</span>/tmp
+</span><span class="line">/usr/local/opt/mysql/bin/mysql_secure_installation
+</span><span class="line"><span class="c">#基本使用</span>
+</span><span class="line">mysql.server start
+</span><span class="line">mysql.server stop
+</span><span class="line">mysql.server restart
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[English Phonetics Keyboard Layout for Mac OS X]]></title>

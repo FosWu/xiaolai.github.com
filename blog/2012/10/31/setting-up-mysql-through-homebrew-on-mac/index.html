@@ -5,11 +5,27 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Notes on Ruby on Rails Tutorial (ed2) - xiaolai</title>
+  <title>Setting up mysql through homebrew on mac - xiaolai</title>
   <meta name="author" content="xiaolai">
 
   
-  <meta name="description" content="1. 准备工作 重中之重，是习惯Google——把“遇到问题马上Google”当做最本能的反应。这事儿，一句话就说完了，一遍就读懂了，可偏偏就有99%的人不这么做。 1.1 安装本地ROR开发环境 1.2 注册网络应用 1.2.a github.com 1.2.b heroku.com 1.3 &hellip;">
+  <meta name="description" content="安装、配置与基本使用 terminal 1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+#安装
+brew install mysql
+#配置
+mkdir ~/Library/LaunchAgents/
+cp /usr/local/Cellar/mysql/5.5.27/homebrew. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +34,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://xiaolai.github.com/alpha/ruby-on-rails-tutorial-ed2/">
+  <link rel="canonical" href="http://xiaolai.github.com/blog/2012/10/31/setting-up-mysql-through-homebrew-on-mac/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/stylesheets/custom.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -93,57 +109,17 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Notes on Ruby on Rails Tutorial (Ed2)</h1>
-    <p class="meta">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-10-03T12:57:00+08:00" pubdate data-updated="true">Oct 3<span>rd</span>, 2012</time></p>
-  </header>
-  
-	<div class="entry-content">
-  <h1 id="section">1. 准备工作</h1>
-
-<p>重中之重，是习惯Google——把“遇到问题马上Google”当做最本能的反应。这事儿，一句话就说完了，一遍就读懂了，可偏偏就有99%的人不这么做。</p>
-
-<h2 id="ror">1.1 安装本地ROR开发环境</h2>
-
-<h2 id="section-1">1.2 注册网络应用</h2>
-
-<h3 id="a-githubcom">1.2.a github.com</h3>
-
-<h3 id="b-herokucom">1.2.b heroku.com</h3>
-
-<h2 id="terminal">1.3 配置控制台(Terminal)</h2>
-
-<h2 id="section-2">1.4 编辑器</h2>
-
-<h2 id="git">1.5 学习Git</h2>
-
-<h2 id="section-3">1.6 体验最终结果</h2>
-
-<h1 id="chapter-2---a-demo-app">2. Chapter 2 - A demo app</h1>
-
-<p>这一章可以跳过。推荐用官方的blog教程。</p>
-
-
-	</div>
-  
-    <footer>
+    
+      
+        <h1 class="entry-title">Setting Up Mysql Through Homebrew on Mac</h1>
+      
+    
+    
       <p class="meta">
         
-        
 
 
 
@@ -155,13 +131,75 @@
   
 
 
-<time datetime="2012-10-03T12:57:00+08:00" pubdate data-updated="true">Oct 3<span>rd</span>, 2012</time>
+<time datetime="2012-10-31T07:39:00+08:00" pubdate data-updated="true">Oct 31<span>st</span>, 2012</time>
+        
+         | <a href="#disqus_thread">Comments</a>
         
       </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>安装、配置与基本使用</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>terminal  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="c">#安装</span>
+</span><span class="line">brew install mysql
+</span><span class="line"><span class="c">#配置</span>
+</span><span class="line">mkdir ~/Library/LaunchAgents/
+</span><span class="line">cp /usr/local/Cellar/mysql/5.5.27/homebrew.mxcl.mysql.plist ~/Library/LaunchAgents/aunchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+</span><span class="line"><span class="nb">unset </span>TMPDIR
+</span><span class="line">mysql_install_db --verbose --user<span class="o">=</span><span class="sb">`</span>whoami<span class="sb">`</span> --basedir<span class="o">=</span><span class="s2">&quot;$(brew --prefix mysql)&quot;</span> --datadir<span class="o">=</span>/usr/local/var/mysql --tmpdir<span class="o">=</span>/tmp
+</span><span class="line">/usr/local/opt/mysql/bin/mysql_secure_installation
+</span><span class="line"><span class="c">#基本使用</span>
+</span><span class="line">mysql.server start
+</span><span class="line">mysql.server stop
+</span><span class="line">mysql.server restart
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
       
-        <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://xiaolai.github.com/alpha/ruby-on-rails-tutorial-ed2/index.html" data-via="xiaolai" data-counturl="http://xiaolai.github.com/alpha/ruby-on-rails-tutorial-ed2/index.html" >Tweet</a>
+
+<span class="byline author vcard">Posted by <span class="fn">xiaolai</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-31T07:39:00+08:00" pubdate data-updated="true">Oct 31<span>st</span>, 2012</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://xiaolai.github.com/blog/2012/10/31/setting-up-mysql-through-homebrew-on-mac/" data-via="xiaolai" data-counturl="http://xiaolai.github.com/blog/2012/10/31/setting-up-mysql-through-homebrew-on-mac/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -171,9 +209,14 @@
   
 </div>
 
+    
+    <p class="meta">
       
-    </footer>
-  
+        <a class="basic-alignment left articlenav" href="/blog/2012/10/28/english-phonetics-keyboard-layout-for-mac-os-x/" title="Previous Post: English Phonetics Keyboard Layout for Mac OS X">&laquo; English Phonetics Keyboard Layout for Mac OS X</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
   <section>
@@ -203,6 +246,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/10/31/setting-up-mysql-through-homebrew-on-mac/">Setting up mysql through homebrew on mac</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/10/28/english-phonetics-keyboard-layout-for-mac-os-x/">English Phonetics Keyboard Layout for Mac OS X</a>
       </li>
     
@@ -216,10 +263,6 @@
     
       <li class="post">
         <a href="/blog/2012/10/15/ruby-on-rails-is-my-new-start/">新的起点Ruby on Rails</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/10/06/return-to-textmate/">转了一圈，回到TextMate</a>
       </li>
     
   </ul>
@@ -248,8 +291,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://xiaolai.github.com/alpha/ruby-on-rails-tutorial-ed2/index.html';
-        var disqus_url = 'http://xiaolai.github.com/alpha/ruby-on-rails-tutorial-ed2/index.html';
+        var disqus_identifier = 'http://xiaolai.github.com/blog/2012/10/31/setting-up-mysql-through-homebrew-on-mac/';
+        var disqus_url = 'http://xiaolai.github.com/blog/2012/10/31/setting-up-mysql-through-homebrew-on-mac/';
         var disqus_script = 'embed.js';
       
     (function () {
@@ -293,13 +336,6 @@
   </script>
 
 
-
-  <script type="text/javascript">
-  jQuery(document).ready(function() {
-    // Put a TOC right before the entry content.
-    generateTOC('.entry-content', 'Table of Contents');
-  });
-  </script>
 
 
 </body>
