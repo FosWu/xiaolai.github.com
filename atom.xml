@@ -4,7 +4,7 @@
   <title><![CDATA[xiaolai]]></title>
   <link href="http://xiaolai.github.com/atom.xml" rel="self"/>
   <link href="http://xiaolai.github.com/"/>
-  <updated>2012-10-31T07:43:42+08:00</updated>
+  <updated>2012-11-02T11:57:41+08:00</updated>
   <id>http://xiaolai.github.com/</id>
   <author>
     <name><![CDATA[xiaolai]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[关于剽窃]]></title>
+    <link href="http://xiaolai.github.com/blog/2012/11/02/on-plagiarism/"/>
+    <updated>2012-11-02T11:31:00+08:00</updated>
+    <id>http://xiaolai.github.com/blog/2012/11/02/on-plagiarism</id>
+    <content type="html"><![CDATA[<p><a href="http://v2ex.com/t/51189">v2ex上的一个帖子</a>，引来大量回复，起因是一剽窃事件。</p>
+
+<p>国人对剽窃的宽容，大概是举世闻名的。在阅读帖子与回复的过程中，我曾有过幻觉：“还是有不少人能够分辨是非的！”可今早醒来，想起来很可能存在另外一种情况：“有更多的人其实持另外一种态度，只不过，他们也知道这种态度‘不宜公开’，于是选择了沉默……”怎么想都觉得沉默的是大多数。不禁黯然。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Setting up mysql through homebrew on mac]]></title>
