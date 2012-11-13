@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>alpha - xiaolai</title>
+  <title>定制Terminal (OS X) - xiaolai</title>
   <meta name="author" content="xiaolai">
 
   
-  <meta name="description" content="笔记-杂七杂八 On Ruby On Rails On Octopress On HomeBrew: Ruby on Rails Dev Env - HomeBrew Way On MacPorts: Ruby on Rails Dev Env - MacPorts Way On Sublime &hellip;">
+  <meta name="description" content="Solarized Theme 默认的情况下，Terminal是白底黑字的，看久了佷伤眼睛，换成支持Retina的Solarized Theme，眼睛就会舒服很多（不过，Textmate上，我倒是选择了Monokai Theme）。下载链接：https://github.com/tomislav &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://xiaolai.github.com/alpha/">
+  <link rel="canonical" href="http://xiaolai.github.com/alpha/notes/terminal.html">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/stylesheets/custom.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -96,7 +96,7 @@
 <article role="article">
   
   <header>
-    <h1 class="entry-title">Alpha</h1>
+    <h1 class="entry-title">定制Terminal (OS X)</h1>
     <p class="meta">
 
 
@@ -109,26 +109,58 @@
   
 
 
-<time datetime="2012-09-23T13:34:00+08:00" pubdate data-updated="true">Sep 23<span>rd</span>, 2012</time></p>
+<time datetime="2012-11-13T23:59:00+08:00" pubdate data-updated="true">Nov 13<span>th</span>, 2012</time></p>
   </header>
   
 	<div class="entry-content">
-  <ul>
-  <li><a href="notes/">笔记-杂七杂八</a>
-    <ul>
-      <li><a href="notes/Ruby.html">On Ruby</a></li>
-      <li><a href="notes/Rails.html">On Rails</a></li>
-      <li><a href="notes/Octopress.html">On Octopress</a></li>
-      <li><a href="notes/HomeBrew.html">On HomeBrew: Ruby on Rails Dev Env - HomeBrew Way</a></li>
-      <li><a href="notes/MacPorts.html">On MacPorts: Ruby on Rails Dev Env - MacPorts Way</a></li>
-      <li><a href="notes/Sublime-Text-2.html">On Sublime Text 2</a></li>
-      <li><a href="notes/TextMate2.html">On TextMate2</a>  </li>
-      <li><a href="notes/Terminal.html">On Terminal</a>  </li>
-    </ul>
-  </li>
-  <li><a href="migrate-to-mac/">Mac小白指南</a></li>
-  <li><a href="on-learning/">学习学习再学习</a></li>
-</ul>
+  <h1 id="solarized-theme">Solarized Theme</h1>
+
+<p>默认的情况下，Terminal是白底黑字的，看久了佷伤眼睛，换成支持Retina的Solarized Theme，眼睛就会舒服很多（不过，Textmate上，我倒是选择了Monokai Theme）。下载链接：<a href="https://github.com/tomislav/osx-lion-terminal.app-colors-solarized">https://github.com/tomislav/osx-lion-terminal.app-colors-solarized</a> （我选择使用的是Solarized Dark）。</p>
+
+<p><img class="center" src="http://ethanschoonover.com/solarized/img/solarized-vim.png" /></p>
+
+<h1 id="bashprofile-">设置 .bash_profile 文件</h1>
+
+<p>每次打开Terminal的时候，它会搜索用户目录下的隐藏文件：<code>.bash_profile</code>和<code>.bashrc</code>，我个人的习惯是只用<code>.bash_profile</code>。</p>
+
+<p>打开<code>.bash_profile</code>文件添加以下两行（我用的文本编辑器是TextMate）：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="nb">alias </span><span class="nv">bpr</span><span class="o">=</span><span class="s2">&quot;source ~/.bash_profile&quot;</span>
+</span><span class="line"><span class="nb">alias </span><span class="nv">bp</span><span class="o">=</span><span class="s2">&quot;mate ~/.bash_profile&quot;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>如此这般之后，以后在Terminal里输入<code>bp</code>，则可以呼出TextMate，修改期内容。而后，用<code>bpr</code>重新导入<code>.bash_profile</code>(无需重新启动Terminal)。</p>
+
+<p>添加如下代码后就可以用<code>of</code>命令在Finder中打开当前文件夹。：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="nb">alias </span><span class="nv">of</span><span class="o">=</span><span class="s2">&quot;open . -R&quot;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h1 id="section">定制提示符</h1>
+
+<p>定制提示符有很多种方法，对使用Ruby的人来说，最简洁方便的方法就是使用RVM自带的定制函数：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="c"># RVM Customized Shell Prompt</span>
+</span><span class="line"><span class="o">[[</span> -s <span class="s2">&quot;$HOME/.rvm/contrib/ps1_functions&quot;</span> <span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="nb">source</span> <span class="s2">&quot;$HOME/.rvm/contrib/ps1_functions&quot;</span>
+</span><span class="line">ps1_set --prompt ⌘
+</span><span class="line">
+</span><span class="line"><span class="c"># RVM Bash Completion</span>
+</span><span class="line"><span class="o">[[</span> -r <span class="nv">$rvm_path</span>/scripts/completion <span class="o">]]</span> <span class="o">&amp;&amp;</span> . <span class="nv">$rvm_path</span>/scripts/completion
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>如此这般之后，Terminal的提示符如下：</p>
+
+<p><img class="center" src="http://www.lixiaolai.com.com/images/terminal.png" /></p>
+
 
 	</div>
   
@@ -147,13 +179,13 @@
   
 
 
-<time datetime="2012-09-23T13:34:00+08:00" pubdate data-updated="true">Sep 23<span>rd</span>, 2012</time>
+<time datetime="2012-11-13T23:59:00+08:00" pubdate data-updated="true">Nov 13<span>th</span>, 2012</time>
         
       </p>
       
         <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://xiaolai.github.com/alpha/index.html" data-via="xiaolai" data-counturl="http://xiaolai.github.com/alpha/index.html" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://xiaolai.github.com/alpha/notes/terminal.html" data-via="xiaolai" data-counturl="http://xiaolai.github.com/alpha/notes/terminal.html" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -240,8 +272,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://xiaolai.github.com/alpha/index.html';
-        var disqus_url = 'http://xiaolai.github.com/alpha/index.html';
+        var disqus_identifier = 'http://xiaolai.github.com/alpha/notes/terminal.html';
+        var disqus_url = 'http://xiaolai.github.com/alpha/notes/terminal.html';
         var disqus_script = 'embed.js';
       
     (function () {
@@ -285,6 +317,13 @@
   </script>
 
 
+
+  <script type="text/javascript">
+  jQuery(document).ready(function() {
+    // Put a TOC right before the entry content.
+    generateTOC('.entry-content', 'Table of Contents');
+  });
+  </script>
 
 
 </body>
