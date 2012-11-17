@@ -502,6 +502,76 @@ https://github.com/textmate/textmate/downloads Bundle目录
 
 <p>screencast: <a href="http://code.google.com/p/ruby-amp/downloads/detail?name=RubyAMP.mov">http://code.google.com/p/ruby-amp/downloads/detail?name=RubyAMP.mov</a></p>
 
+<h1 id="gem">查看Gem代码</h1>
+
+<p>将以下脚本保存到<code>/usr/local/bin</code>目录：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="c">#!/bin/sh</span>
+</span><span class="line">
+</span><span class="line">usage<span class="o">()</span>
+</span><span class="line"><span class="o">{</span>
+</span><span class="line">     <span class="nb">echo</span> <span class="s2">&quot;Usage: $(basename $0) &lt;gem&gt;&quot;</span> 1&gt;&amp;2
+</span><span class="line">     <span class="nb">exit </span>1
+</span><span class="line"><span class="o">}</span>
+</span><span class="line">
+</span><span class="line"><span class="nv">GEM</span><span class="o">=</span><span class="s2">&quot;$1&quot;</span>
+</span><span class="line">
+</span><span class="line"><span class="o">[</span> -z <span class="s2">&quot;$GEM&quot;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> usage
+</span><span class="line">mate <span class="s2">&quot;$(gem environment gemdir)/gems/$GEM&quot;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>并将其设置为“可执行脚本”：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line">chmod +x /usr/local/bin/mategem
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>在<code>~/.bash_profile</code>文件中加入以下内容：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line">_mategem<span class="o">()</span>
+</span><span class="line"><span class="o">{</span>
+</span><span class="line">    <span class="nb">local </span>curw
+</span><span class="line">    <span class="nv">COMPREPLY</span><span class="o">=()</span>
+</span><span class="line">    <span class="nv">curw</span><span class="o">=</span><span class="k">${</span><span class="nv">COMP_WORDS</span><span class="p">[COMP_CWORD]</span><span class="k">}</span>
+</span><span class="line">    <span class="nb">local </span><span class="nv">gems</span><span class="o">=</span><span class="s2">&quot;$(gem environment gemdir)/gems&quot;</span>
+</span><span class="line">    <span class="nv">COMPREPLY</span><span class="o">=(</span><span class="k">$(</span><span class="nb">compgen</span> -W <span class="s1">&#39;$(ls $gems)&#39;</span> -- <span class="nv">$curw</span><span class="k">)</span><span class="o">)</span>;
+</span><span class="line">    <span class="k">return </span>0
+</span><span class="line"><span class="o">}</span>
+</span><span class="line"><span class="nb">complete</span> -F _mategem -o dirnames mategem
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>而后重新载入<code>~/.bash_profile</code>：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="nb">source</span> ~/.bash_profile
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>以后就可以输入“mategem bootstrap ⇥” 而后得到<code>mategem bootstrap-sass-2.1.1.0</code>……超级方便！</p>
+
+<p>(learned from <a href="http://effectif.com/mac-os-x/textmate/opening-ruby-gems-in-textmate">http://effectif.com/mac-os-x/textmate/opening-ruby-gems-in-textmate</a>)</p>
+
 
 	</div>
   

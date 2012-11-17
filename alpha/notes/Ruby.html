@@ -9,7 +9,7 @@
   <meta name="author" content="xiaolai">
 
   
-  <meta name="description" content="Ruby Style Guide Style is what separates the good from the great. – Bozhidar Batsov https://github.com/bbatsov/ruby-style-guide 下一步学习Rails的时候，请参照： &hellip;">
+  <meta name="description" content="在Mac上安装Ruby 事实上，Mac是自带Ruby的，只不过是老版本（OS X 10.8.2上自带Ruby 1.8.7）。你可以在Terminal中用ruby -v检查当前Ruby版本。不过，我们一般都会使用最新版的Ruby。而又由于经常需要在多个Ruby版本中切换， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -113,7 +113,39 @@
   </header>
   
 	<div class="entry-content">
-  <h1 id="ruby-style-guide">Ruby Style Guide</h1>
+  <h1 id="macruby">在Mac上安装Ruby</h1>
+
+<p>事实上，Mac是自带Ruby的，只不过是老版本（OS X 10.8.2上自带Ruby 1.8.7）。你可以在Terminal中用<code>ruby -v</code>检查当前Ruby版本。不过，我们一般都会使用最新版的Ruby。而又由于经常需要在多个Ruby版本中切换，所以需要一个Ruby版本管理工具。我们选择的是<a href="https://rvm.io">RVM</a>（一些人可能更推荐<a href="https://github.com/viking/Renv">RENV</a>）。</p>
+
+<p>安装HomeBrew——这是一个Mac上的命令行软件安装工具（类似的还有MacPorts）：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="nv">$ </span>ruby &lt;<span class="o">(</span>curl -fsSkL raw.github.com/mxcl/homebrew/go<span class="o">)</span>
+</span><span class="line"><span class="nv">$ </span>brew doctor
+</span><span class="line"><span class="nv">$ </span>brew tap homebrew/dupes
+</span><span class="line"><span class="nv">$ </span>sudo chown -R <span class="sb">`</span>whoami<span class="sb">`</span> /usr/local
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>安装编译器：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line">rew install autoconf automake apple-gcc42
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>另外，可在此基础上再安装XCode，及其Command Line Tools。</p>
+
+<p>安装RVM：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line">curl -L https://get.rvm.io | bash -s stable --ruby
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>在安装RVM的同时，这条命令也会安装Ruby的最新版本。</p>
+
+<h1 id="ruby-style-guide">Ruby Style Guide</h1>
 
 <blockquote>
   <p>Style is what separates the good from the great. 
