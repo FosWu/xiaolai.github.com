@@ -4,7 +4,7 @@
   <title><![CDATA[xiaolai]]></title>
   <link href="http://xiaolai.github.com/atom.xml" rel="self"/>
   <link href="http://xiaolai.github.com/"/>
-  <updated>2012-12-23T12:21:39+08:00</updated>
+  <updated>2012-12-23T14:17:26+08:00</updated>
   <id>http://xiaolai.github.com/</id>
   <author>
     <name><![CDATA[xiaolai]]></name>
@@ -26,6 +26,7 @@
 
 <ul>
   <li>真实姓名</li>
+  <li>QQ号码</li>
   <li>身份证号码</li>
   <li>移动电话号码</li>
   <li>常用电子邮件地址</li>
